@@ -193,7 +193,7 @@ return (
     {data.token !== null ?
         <Drawer.Navigator drawerContent = {props => <MainDrawer {...props}  screenOptions = {{
         }}/>} >
-            <Drawer.Screen name = 'Home' component = {MainTab} options = {{
+            <Drawer.Screen name = 'HomeDrawer' component = {MainTab} options = {{
 /* When I migrated the project to bare minimum project, I had to write this line because prior to writing this, the app was showing a double header for some reason.*/
                 headerShown: false,
             }}/>

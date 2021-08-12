@@ -50,22 +50,22 @@ return(
     inactiveColor = '#B0B0B0'
     activeColor = '#fff'
     >
-    <Tab.Screen name = 'HomeTab' component = {HomeStackScreen} options = {{
+    <Tab.Screen name = 'Home' component = {HomeStackScreen} options = {{
         tabBarColor: HomeBarColor(),
         tabBarLabel: 'Home',
         tabBarIcon: ({color}) => <Icon name = 'home' color = {color} size = {25} />
     }}/>
-    <Tab.Screen name = 'AboutTab' component = {AboutStackScreen} options = {{
+    <Tab.Screen name = 'About' component = {AboutStackScreen} options = {{
         tabBarColor: AboutBarColor(),
         tabBarLabel: 'About',
         tabBarIcon: ({color}) => <Icon name = 'albums-outline' color = {color} size = {25} />
     }} />
-    <Tab.Screen name = 'ProfileTab' component = {ProfileStackScreen} options = {{
+    <Tab.Screen name = 'Profile' component = {ProfileStackScreen} options = {{
         tabBarColor: ProfileBarColor(),
             tabBarLabel: 'Profile',
             tabBarIcon: ({color}) => <Icon name = 'ios-person' color = {color} size = {25} />
     }} />
-    <Tab.Screen name = 'ExploreTab' component = {ExploreStackScreen} options = {{
+    <Tab.Screen name = 'Explore' component = {ExploreStackScreen} options = {{
         tabBarColor: ExploreBarColor(),
         tabBarLabel: 'Explore',
         tabBarIcon: ({color}) => <Icon name = 'navigate-circle-outline' color = {color} size = {25} />
@@ -81,7 +81,7 @@ return(
     inactiveColor = '#B0B0B0'
     activeColor = '#fff'
     >
-    <Tab.Screen name = 'HomeDrawer' component = {HomeStackScreen} options = {{
+    <Tab.Screen name = 'Home' component = {HomeStackScreen} options = {{
         tabBarColor: HomeBarColor(),
         tabBarLabel: 'Home',
         tabBarIcon: ({color}) => <Icon name = 'home' color = {color} size = {25} />
@@ -116,7 +116,7 @@ return(
         headerShown: false,
     }}
     >
-    <Tab.Screen name = 'HomeDrawer' component = {HomeStackScreen} options = {{
+    <Tab.Screen name = 'Home' component = {HomeStackScreen} options = {{
         tabBarColor: HomeBarColor(),
         tabBarLabel: 'Home',
         tabBarIcon: ({color}) => <Icon name = 'home' color = {color} size = {25} />
@@ -147,7 +147,7 @@ return(
     inactiveColor = '#B0B0B0'
     activeColor = '#fff'
     >
-    <Tab.Screen name = 'HomeDrawer' component = {HomeStackScreen} options = {{
+    <Tab.Screen name = 'Home' component = {HomeStackScreen} options = {{
         tabBarColor: HomeBarColor(),
         tabBarLabel: 'Home',
         tabBarIcon: ({color}) => <Icon name = 'home' color = {color} size = {25} />
@@ -188,7 +188,7 @@ return(
         },
         headerTintColor: '#fff',
     }}>
-        <HomeStack.Screen name = 'Home' component = {Home} options = {{
+        <HomeStack.Screen name = 'HomeStack' component = {Home} options = {{
         title: "Home",
         headerLeft: ()=> <Icon.Button name = 'ios-menu' backgroundColor = {colors.homeIconBackground} color = '#fff' size = {25}  style = {{paddingLeft: 20,}} onPress = {() => navigation.openDrawer()} />,
         }}/>
@@ -204,7 +204,7 @@ return(
         headerStyle: {backgroundColor: AboutBarColor(),},
         headerTintColor: '#fff',
     }}>
-        <AboutStack.Screen name = 'About' component = {About} options = {{
+        <AboutStack.Screen name = 'AboutStack' component = {About} options = {{
         title: "About Us",
         headerLeft: ()=> <Icon.Button name = 'ios-menu' backgroundColor = {colors.aboutIconBackground} color = '#fff' size = {25}  style = {{paddingLeft: 20,}} onPress = {() => navigation.openDrawer()} />,
         }}/>
@@ -219,7 +219,7 @@ return(
         headerStyle: {backgroundColor: ProfileBarColor(),},
         headerTintColor: '#fff',
     }}>
-        <ProfileStack.Screen name = 'Profile' component = {Profile} options = {{
+        <ProfileStack.Screen name = 'ProfileStack' component = {Profile} options = {{
         title: "Profile",
         headerLeft: ()=> <Icon.Button name = 'ios-menu' backgroundColor = {colors.profileIconBackground} color = '#fff' size = {25}  style = {{paddingLeft: 20,}} onPress = {() => navigation.openDrawer()} />,
         }}/>
@@ -234,7 +234,7 @@ return(
         headerStyle: {backgroundColor: ExploreBarColor(),},
         headerTintColor: '#fff',
     }}>
-        <ExploreStack.Screen name = 'Explore' component = {Explore} options = {{
+        <ExploreStack.Screen name = 'ExploreStack' component = {Explore} options = {{
         title: "Explore",
         headerLeft: ()=> <Icon.Button name = 'ios-menu' backgroundColor = {colors.exploreIconBackground} color = '#fff' size = {25}  style = {{paddingLeft: 20,}} onPress = {() => navigation.openDrawer()} />,
         }}/>
